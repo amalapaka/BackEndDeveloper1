@@ -22,7 +22,7 @@ public class Movie implements Comparable<Movie>{
 		director = "";
 		genre = "";
 		runtime = 0;
-		this.act = new String[];
+		this.act = null;
 		year = 0;
 		ratings = 0.0;
 	}
@@ -55,8 +55,8 @@ public class Movie implements Comparable<Movie>{
 	public double getRatings() {
 		return ratings;
 	}
-	public String[] getActors() {
-		return this.act;
+	public String getActors() {
+		return Arrays.toString(this.act);
 	}
 	
 	public void setTitle(String title) {
